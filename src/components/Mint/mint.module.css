@@ -1,0 +1,219 @@
+.mintContainer {
+  display: flex;
+  height: fit-content;
+  width: 50rem;
+  color: white;
+}
+
+.mintForm {
+  display: flex;
+  /* background-color: red;
+  border: 1px solid white; */
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.mintTitle {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.fileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fileTitle {
+  width: 100%;
+  padding-bottom: 5px;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.fileTypes {
+  width: 100%;
+  padding-bottom: 2px;
+}
+
+.fileCharge {
+  border: 3px dashed #ddd;
+  height: 16rem;
+  width: 25rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.fileCharge div {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fileCharge img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.trash {
+  position: absolute;
+  font-size: 1rem;
+  top: 0;
+  right: 0;
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 0 15px 0 15px;
+}
+
+.fileCharge h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.fileInput {
+  height: 100%;
+  width: 100%;
+}
+
+.fileIcon {
+  font-size: 4rem;
+}
+
+.mintFieldsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.2rem;
+  position: relative;
+}
+
+.mintFieldsContainerExep {
+  margin-bottom: 0rem;
+}
+
+.mintLabel {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.mintInputText {
+  border: none;
+  background-color: #ddd;
+  height: 2.5rem;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  margin-bottom: 0.3rem;
+  border-radius: 5px;
+}
+
+.mintInputTextarea {
+  min-height: 10rem;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 0.3rem;
+  resize: none;
+}
+
+.mintFieldsContainer span {
+  margin-bottom: 5px;
+}
+
+.mintAddAttribute {
+  border: 3px dashed #ddd;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  padding: 0 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.attributeContainer {
+  background-color: #ddd;
+  color: var(--bg-primario);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  height: 2.2rem;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.attributeLabel {
+  font-weight: 600;
+}
+
+.attributeValue {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.trashAttribute {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mintButton {
+  height: 3rem;
+  background-color: rgb(39, 39, 153);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 10rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.mintButtonDisabled {
+  background-color: rgba(39, 39, 153, 0.2);
+  color: rgba(255, 255, 255, 0.2);
+  cursor: no-drop
+}
+
+.errorText {
+  display: flex;
+  align-items: center;
+  color: rgb(200, 45, 45);
+  font-size: 1rem;
+  position: absolute;
+  bottom: -1.5rem;
+}
+
+.exclamationIcon {
+  margin-right: 0.3rem;
+}

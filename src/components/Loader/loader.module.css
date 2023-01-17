@@ -1,0 +1,46 @@
+.loaderContainer {
+  display: inline-block;
+  position: relative;
+  background-color: #282a283f;
+  backdrop-filter: blur(20px) !important;
+  border-radius: 50%;
+  height: 15.625rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loaderContainer .loader {
+  width: 15.625rem;
+  height: 15.625rem;
+  border: 2px solid #999;
+  border-top: 2px solid rgb(39, 39, 153);
+  border-radius: 50%;
+  animation: loader .75s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loaderText {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #999;
+  height: 15.625rem;
+  width: 15.625rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
