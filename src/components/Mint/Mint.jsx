@@ -71,10 +71,10 @@ export default function Mint() {
     e.preventDefault();
     try {
       setLoader(true)
-      let response = await axios.post(`http://localhost:3001/mint`, nft)
+      let response = await axios.post(`/mint`, nft)
       console.log(response.data)
       if (!response.data.message) {
-        let status = await axios.get(`http://localhost:3001/mint?id=${response.data.id}`)
+        let status = await axios.get(`/mint?id=${response.data.id}`)
         console.log(status.data)
       }
       setLoader(false)
