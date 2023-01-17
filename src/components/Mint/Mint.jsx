@@ -50,7 +50,6 @@ export default function Mint() {
   }, [nft])
 
   useEffect(() => {
-    if (!nft.name.length && !nft.description.length && !nft.image.length && !nft.attributes.length) return;
     if (!Object.keys(errors).length) {
       setButtonDisabled(false)
     } else {
@@ -72,10 +71,8 @@ export default function Mint() {
     try {
       setLoader(true)
       let response = await axios.post(`/mint`, nft)
-      console.log(response.data)
       if (!response.data.message) {
         let status = await axios.get(`/mint?id=${response.data.id}`)
-        console.log(status.data)
       }
       setLoader(false)
       setNft({
@@ -104,9 +101,7 @@ export default function Mint() {
 
   async function handleChangeImage(e) {
     e.preventDefault()
-    // console.log(e.target.files[0].name)
     const imageUrl = await uploadFile(e.target.files[0], e.target.files[0].name);
-    console.log(imageUrl)
     setNft({ ...nft, image: imageUrl });
   }
 
