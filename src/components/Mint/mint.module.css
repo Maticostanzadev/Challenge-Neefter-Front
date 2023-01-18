@@ -1,19 +1,17 @@
 .mintContainer {
   display: flex;
   height: fit-content;
-  width: 50rem;
+  width: 50em;
   color: white;
 }
 
 .mintForm {
   display: flex;
-  /* background-color: red;
-  border: 1px solid white; */
   flex-direction: column;
   width: 100%;
   padding: 5px;
   position: relative;
-  padding-bottom: 3rem;
+  padding-bottom: 3em;
 }
 
 .mintTitle {
@@ -21,7 +19,7 @@
   width: 100%;
   text-align: center;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 .fileContainer {
@@ -34,7 +32,7 @@
   width: 100%;
   padding-bottom: 5px;
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.7em;
 }
 
 .fileTypes {
@@ -44,8 +42,8 @@
 
 .fileCharge {
   border: 3px dashed #ddd;
-  height: 16rem;
-  width: 25rem;
+  height: 16em;
+  width: 25em;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -75,7 +73,7 @@
 
 .trash {
   position: absolute;
-  font-size: 1rem;
+  font-size: 1em;
   top: 0;
   right: 0;
   background-color: black;
@@ -86,7 +84,7 @@
 }
 
 .fileCharge h2 {
-  font-size: 1.7rem;
+  font-size: 1.7em;
   margin-bottom: 10px;
 }
 
@@ -96,22 +94,22 @@
 }
 
 .fileIcon {
-  font-size: 4rem;
+  font-size: 4em;
 }
 
 .mintFieldsContainer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.2em;
   position: relative;
 }
 
 .mintFieldsContainerExep {
-  margin-bottom: 0rem;
+  margin-bottom: 0em;
 }
 
 .mintLabel {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin-bottom: 5px;
   font-weight: 600;
 }
@@ -119,19 +117,19 @@
 .mintInputText {
   border: none;
   background-color: #ddd;
-  height: 2.5rem;
-  font-size: 1.1rem;
-  padding: 0 0.5rem;
-  margin-bottom: 0.3rem;
+  height: 2.5em;
+  font-size: 1.1em;
+  padding: 0 0.5em;
+  margin-bottom: 0.3em;
   border-radius: 5px;
 }
 
 .mintInputTextarea {
-  min-height: 10rem;
-  font-size: 1.1rem;
-  padding: 0 0.5rem;
+  min-height: 10em;
+  font-size: 1.1em;
+  padding: 0 0.5em;
   border-radius: 5px;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.3em;
   resize: none;
 }
 
@@ -145,10 +143,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2.5rem;
-  font-size: 1.3rem;
-  padding: 0 0.5rem;
-  margin-bottom: 1rem;
+  height: 2.5em;
+  font-size: 1.3em;
+  padding: 0 0.5em;
+  margin-bottom: 1em;
   border-radius: 5px;
   font-weight: 600;
   cursor: pointer;
@@ -160,10 +158,10 @@
   border-radius: 15px;
   display: flex;
   align-items: center;
-  height: 2.2rem;
-  font-size: 1.1rem;
-  padding: 0 0.5rem;
-  margin-bottom: 1rem;
+  height: 2.2em;
+  font-size: 1.1em;
+  padding: 0 0.5em;
+  margin-bottom: 1em;
   border-radius: 5px;
 }
 
@@ -172,7 +170,7 @@
 }
 
 .attributeValue {
-  margin-left: 0.5rem;
+  margin-left: 0.5em;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -181,21 +179,21 @@
 }
 
 .trashAttribute {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   cursor: pointer;
 }
 
 .mintButton {
-  height: 3rem;
+  height: 3em;
   background-color: rgb(39, 39, 153);
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 600;
-  width: 10rem;
+  width: 10em;
   position: absolute;
   bottom: 0;
   right: 0;
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
   cursor: pointer;
 }
 
@@ -209,11 +207,51 @@
   display: flex;
   align-items: center;
   color: rgb(200, 45, 45);
-  font-size: 1rem;
+  font-size: 1em;
   position: absolute;
-  bottom: -1.5rem;
+  bottom: -1.5em;
 }
 
 .exclamationIcon {
-  margin-right: 0.3rem;
+  margin-right: 0.3em;
+}
+
+@media (max-width: 1000px) {
+  .mintContainer {
+    width: 100%;
+    /* padding: 0 2em; */
+  }
+}
+
+@media (max-width: 610px) {
+  .mintContainer {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mintContainer {
+    font-size: 13px;
+  }
+
+  .mintForm {
+    padding-bottom: 4.5em;
+  }
+
+  .mintButton {
+    height: 2.5em;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .fileCharge {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .mintContainer {
+    font-size: 12px;
+  }
 }
