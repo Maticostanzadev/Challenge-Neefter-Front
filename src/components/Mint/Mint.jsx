@@ -42,6 +42,10 @@ export default function Mint() {
       error.email = "Email is not valid."
     }
 
+    if (!nft.name.length || !nft.description.length || !nft.email.length) {
+      error.empty = "Empty fields."
+    }
+
     setErrors(error)
   }
 
